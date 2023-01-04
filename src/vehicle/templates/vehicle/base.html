@@ -1,0 +1,13 @@
+<h1>Any Template</h1>
+{{ variable_name }}
+<h2> Autenticado: </h2>
+{% if is_authenticated %}
+<h2>Sim</h2>
+{% else %}
+<h2>Não</h2>
+{% endif %}
+
+{% for ship in ships %}
+<h2>Nome: {{ship.name|capfirst}}</h2>
+<h2>Descrição: {{ship.description|capfirst}}</h2>
+{% endfor %}
